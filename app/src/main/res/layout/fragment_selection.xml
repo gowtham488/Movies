@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.mgr.movies.viewmodels.SelectionViewModel" />
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fragments.SelectionFragment">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/fldGrpA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/movies"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Movies"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/series"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Series"
+                app:layout_constraintTop_toBottomOf="@+id/movies" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </FrameLayout>
+</layout>
